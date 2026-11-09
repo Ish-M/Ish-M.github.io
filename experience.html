@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experience | Ishaan Marwaha</title>
+<meta name="description" content="Work and research experience of Ishaan Marwaha.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="">Ishaan Marwaha</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="experience.html" aria-current="page">Experience</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="career-goals.html">Career Goals</a></li>
+<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="page-head"><div class="container">
+  <h1>Experience</h1>
+</div></div>
+<section id="mediloc">
+  <div class="container grid-2" style="align-items:center">
+    <div>
+      <span class="eyebrow">May 2025 – Present</span>
+      <h2>Medi-Loc LLC</h2>
+      <div class="meta">Co-Founder &amp; Lead Developer</div>
+      <p style="margin-top:12px">I co-founded Medi-Loc to
+      build Medi-Zero, a smart medication dispenser that makes the right dose available at the right time.</p>
+      <ul>
+        <li>Architected the custom mainboard schematic and production PCB layout in KiCad, taking the device from concept
+        to a functional prototype on a reliable, low-cost hardware platform capable of precise actuation.</li>
+        <li>Developed low-level C/C++ embedded firmware for real-time sensor polling, motor timing, and system-level
+        fault handling.</li>
+        <li>Pitched the integrated hardware-software architecture at state and national engineering competitions,
+        securing a U.S. patent and several startup grants.</li>
+      </ul>
+    </div>
+    <figure><img src="assets/img/mediloc.jpg" alt="Medi-Zero prototype dispenser with display and fingerprint sensor">
+      <figcaption>The Medi-Zero prototype, running on the custom mainboard I designed.</figcaption></figure>
+  </div>
+</section>
+
+<section id="bhasin" class="alt">
+  <div class="container grid-2" style="align-items:center">
+    <div>
+      <span class="eyebrow">May 2024 – Aug 2026</span>
+      <h2>Bhasin Systems Biomedicine Lab, Emory University</h2>
+      <div class="meta">Research Intern, Department of Bioinformatics</div>
+      <p style="margin-top:12px">A student-run team developing machine learning models for early-stage cancer biomarker
+      detection from sparse RNA sequencing data.</p>
+      <ul>
+        <li>Engineered a memory-efficient machine learning pipeline in PyTorch to get past computational bottlenecks in
+        highly sparse single-cell transcriptomic datasets, optimizing dimensionality reduction and achieving high
+        predictive precision for a biological aging model.</li>
+        <li>Benchmarked the algorithm's performance, error rates, and sparse-data handling against traditional
+        statistical methods, culminating in a shared first-author publication in <em>Frontiers in Aging</em> (2025).</li>
+      </ul>
+    </div>
+    <figure class="fig-narrow"><img src="assets/img/bhasin-umap.png" alt="UMAP plot of T-cell clusters: naive, effector, and exhausted T cells">
+      <figcaption>UMAP of single-cell data separating naive, effector, and exhausted T-cell states.</figcaption></figure>
+  </div>
+</section>
+
+<section id="vital">
+  <div class="container grid-2" style="align-items:center">
+    <div>
+    <span class="eyebrow">Jul 2024 – Aug 2024</span>
+    <h2>ViTAL Lab, Georgia Tech</h2>
+    <div class="meta">Research Intern, Department of Biomedical Engineering</div>
+    <p style="margin-top:12px">A summer research experience building data pipelines that extract joint angles and gait
+    data from video using machine learning.</p>
+    <ul>
+      <li>Developed a Python computer-vision and time-series processing pipeline with NumPy and Pandas, enabling
+      accurate, quantitative biomechanical analysis from continuous video recordings.</li>
+      <li>Replaced slow manual interpretation of complex movements with automated data extraction that generates 2D
+      visualizations, significantly speeding up the lab's research workflow.</li>
+    </ul>
+    </div>
+    <figure><img src="assets/img/vital-pose.png" alt="Video frame of a person walking converted into 2D pose-estimation skeletons">
+      <figcaption>2D pose estimation: smartphone video converted into skeleton keypoints for gait and joint-angle analysis.</figcaption></figure>
+  </div>
+</section>
+
+<section id="camp" class="alt">
+  <div class="container prose">
+    <span class="eyebrow">Jun 2026 – Jul 2026</span>
+    <h2>WhizLearning Kids</h2>
+    <div class="meta">Software Development Camp Counselor · Atlanta, GA</div>
+    <p style="margin-top:12px">A summer coding camp in Atlanta.</p>
+    <ul>
+      <li>Planned, tested, and taught lessons on Python and JavaScript coding to students of all ages.</li>
+      <li>Led and supervised groups of campers alongside a team of counselors, building leadership and teamwork
+      skills while adapting explanations to each student's level.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Ishaan K. Marwaha · Computer Engineering, Georgia Tech</span>
+    <span><a href="mailto:imarwaha3@gatech.edu">Email</a> · <a href="https://www.linkedin.com/in/ishaanmarwaha/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+<script>
+  const t=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+
+
+</body></html>

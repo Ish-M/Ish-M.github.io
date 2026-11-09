@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Ishaan Marwaha</title>
+<meta name="description" content="Technical projects by Ishaan Marwaha.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="">Ishaan Marwaha</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="projects.html" aria-current="page">Projects</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="career-goals.html">Career Goals</a></li>
+<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="page-head"><div class="container">
+  <h1>Projects</h1>
+</div></div>
+<!-- DISCOVERY PROJECT FEATURE: uncomment and fill in before the Discovery Project Showcase
+<section id="discovery" class="alt">
+  <div class="container prose">
+    <span class="eyebrow">Aug 2026 &ndash; Present</span>
+    <h2>Discovery Project: <span class="todo">[title]</span></h2>
+    <figure>
+      <img src="assets/img/discovery-placeholder.svg" alt="Placeholder for Discovery Project photo">
+      <figcaption>Replace with a photo or video you took of your project.</figcaption>
+    </figure>
+    <h3>The Problem</h3>
+    <p class="todo-block">What question or need did you set out to explore, and why does it matter to you?</p>
+    <h3>The Process</h3>
+    <p class="todo-block">What did you research, build, or test? What tools did you use, and what changed along the way?</p>
+    <h3>The Outcome</h3>
+    <p class="todo-block">What did you produce or find? Include data, a demo, or a photo.</p>
+    <h3>What I Learned &amp; What's Next</h3>
+    <p class="todo-block">How did this shape your interests or ECE roadmap? What would you do next? (Total feature: 400+ words.)</p>
+  </div>
+</section>
+-->
+
+<section id="riscv">
+  <div class="container grid-2" style="align-items:center">
+    <div>
+      <span class="eyebrow">Aug 2026 &ndash; Present</span>
+      <h2>RISC-V Processor</h2>
+      <h3>The Problem</h3>
+      <p>I wanted to understand processors from the inside, not just as a black box that runs my code. Through Georgia
+      Tech Silicon Jackets, I set out to implement core pieces of a RISC-V CPU as an individual project.</p>
+      <h3>The Process</h3>
+      <p>Working in SystemVerilog, I translated the RISC-V Instruction Set Architecture specification into hardware: datapath modules that move
+      and transform data, and a control unit that decodes each instruction into the signals that drive it. Writing the
+      logic was only half the job, so I built a constrained-random verification pipeline that generates large numbers
+      of legal instruction sequences and checks the design's behavior against expected results.</p>
+      <h3>The Outcome</h3>
+      <p>The core executes basic instruction functionality, and the testbench gives me confidence that it does so
+      correctly. I'm continuing to extend it with more of the instruction set.</p>
+    </div>
+    <figure><img src="assets/img/riscv-layout.jpg" alt="Chip layout in Cadence Virtuoso with Pegasus verification results">
+      <figcaption>Chip layout in Cadence Virtuoso on the SkyWater 130&nbsp;nm process, with Pegasus physical-verification results.</figcaption></figure>
+  </div>
+</section>
+
+<section id="turbosentry" class="alt">
+  <div class="container grid-2" style="align-items:center">
+    <figure><img src="assets/img/bilstm.jpg" alt="Bidirectional LSTM architecture with forward and backward layers">
+      <figcaption>Bidirectional LSTM architecture. Image: Pandey et al., <em>Journal of Sensors</em> (2022),
+      <a href="https://doi.org/10.1155/2022/6732150" target="_blank" rel="noopener">doi:10.1155/2022/6732150</a>.</figcaption></figure>
+    <div>
+      <span class="eyebrow">Jan 2026 &ndash; Jun 2026</span>
+      <h2>TurboSentry Jet Engine Monitoring</h2>
+      <h3>The Problem</h3>
+      <p>Jet engines degrade in nonlinear ways that are hard to spot until it's too late. Predicting remaining useful
+      life from sensor data lets maintenance happen before a failure, not after one.</p>
+      <h3>The Process</h3>
+      <p>Using NASA's engine telemetry, I built an ingestion pipeline that serializes raw multivariate sensor streams
+      over multithreaded TCP sockets, simulating live data. I then trained a deep bidirectional LSTM in PyTorch on the GPU
+      to learn degradation patterns across many engines.</p>
+      <h3>The Outcome</h3>
+      <p>The model predicts failure with an average error of under one operational cycle, validated against
+      industry-standard tests.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fusor">
+  <div class="container grid-2" style="align-items:center">
+    <div>
+      <span class="eyebrow">Aug 2026 &ndash; Present</span>
+      <h2>Plasma Jackets Fusor</h2>
+      <h3>The Problem</h3>
+      <p>A Farnsworth&ndash;Hirsch fusor uses an extremely high-voltage electric field to confine plasma and drive fusion
+      reactions. Getting there safely is mostly an electronics problem: the power system has to deliver that voltage
+      reliably without putting people or equipment at risk.</p>
+      <h3>The Process</h3>
+      <p>With Georgia Tech's Plasma Jackets, I lead development of the fusor's electronics and power delivery
+      architecture. I designed the power delivery system around the high-voltage requirements of plasma generation,
+      with safety and stability as the primary design constraints.</p>
+      <h3>The Outcome</h3>
+      <p>The result is a robust power delivery system that supports stable plasma confinement and reliable fusor
+      operation.</p>
+    </div>
+    <figure><img src="assets/img/fusor.jpg" alt="The Plasma Jackets Farnsworth-Hirsch fusor vacuum chamber on a lab cart">
+      <figcaption>The Plasma Jackets fusor.</figcaption></figure>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 Ishaan K. Marwaha &middot; Computer Engineering, Georgia Tech</span>
+    <span><a href="mailto:imarwaha3@gatech.edu">Email</a> &middot; <a href="https://www.linkedin.com/in/ishaanmarwaha/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+<script>
+  const t=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

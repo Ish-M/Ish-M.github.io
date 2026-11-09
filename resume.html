@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume | Ishaan Marwaha</title>
+<meta name="description" content="Resume of Ishaan Marwaha.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="">Ishaan Marwaha</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="resume.html" aria-current="page">Resume</a></li>
+<li><a href="career-goals.html">Career Goals</a></li>
+<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="page-head"><div class="container">
+  <h1>Resume</h1>
+</div></div>
+<section>
+  <div class="container resume-wrap">
+    <p><a class="btn btn-navy" href="assets/docs/Marwaha_Resume.pdf" download>Download PDF</a>
+       <a class="btn btn-line" href="assets/docs/Marwaha_Resume.pdf" target="_blank" rel="noopener">Open in new tab</a></p>
+    <a href="assets/docs/Marwaha_Resume.pdf" target="_blank" rel="noopener"><img class="resume-img" src="assets/img/resume.png" alt="Ishaan Marwaha one-page resume"></a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; 2026 Ishaan K. Marwaha &middot; Computer Engineering, Georgia Tech</span>
+    <span><a href="mailto:imarwaha3@gatech.edu">Email</a> &middot; <a href="https://www.linkedin.com/in/ishaanmarwaha/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+<script>
+  const t=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>
