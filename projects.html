@@ -55,19 +55,16 @@
 <section id="riscv">
   <div class="container grid-2" style="align-items:center">
     <div>
-      <span class="eyebrow">Aug 2026 &ndash; Present</span>
+      <span class="eyebrow">Aug 2026 – Present</span>
       <h2>RISC-V Processor</h2>
       <h3>The Problem</h3>
       <p>I wanted to understand processors from the inside, not just as a black box that runs my code. Through Georgia
       Tech Silicon Jackets, I set out to implement core pieces of a RISC-V CPU as an individual project.</p>
       <h3>The Process</h3>
-      <p>Working in SystemVerilog, I translated the RISC-V Instruction Set Architecture specification into hardware: datapath modules that move
-      and transform data, and a control unit that decodes each instruction into the signals that drive it. Writing the
-      logic was only half the job, so I built a constrained-random verification pipeline that generates large numbers
-      of legal instruction sequences and checks the design's behavior against expected results.</p>
+      <p>Working in SystemVerilog, I translated the RISC-V Instruction Set Architecture specification into a fully-functional CPU RTL. After writing the logic for my CPU core, I built a constrained-random verification pipeline that generates large numbers
+      of legal instruction sequences and checks the design's behavior against expected results. Finally, I completed a SiliconJackets-guided physical design workflow to finalize a physical layout for my chip.&nbsp;</p>
       <h3>The Outcome</h3>
-      <p>The core executes basic instruction functionality, and the testbench gives me confidence that it does so
-      correctly. I'm continuing to extend it with more of the instruction set.</p>
+      <p>The core executes basic instruction functionality correctly as verified by a complete test bench. I am continuing to expand my cpu core to cover more of the RISC-V instruction set.&nbsp;</p>
     </div>
     <figure><img src="assets/img/riscv-layout.jpg" alt="Chip layout in Cadence Virtuoso with Pegasus verification results">
       <figcaption>Chip layout in Cadence Virtuoso on the SkyWater 130&nbsp;nm process, with Pegasus physical-verification results.</figcaption></figure>
@@ -80,18 +77,17 @@
       <figcaption>Bidirectional LSTM architecture. Image: Pandey et al., <em>Journal of Sensors</em> (2022),
       <a href="https://doi.org/10.1155/2022/6732150" target="_blank" rel="noopener">doi:10.1155/2022/6732150</a>.</figcaption></figure>
     <div>
-      <span class="eyebrow">Jan 2026 &ndash; Jun 2026</span>
+      <span class="eyebrow">Jan 2026 – Jun 2026</span>
       <h2>TurboSentry Jet Engine Monitoring</h2>
       <h3>The Problem</h3>
       <p>Jet engines degrade in nonlinear ways that are hard to spot until it's too late. Predicting remaining useful
-      life from sensor data lets maintenance happen before a failure, not after one.</p>
+      life from sensor data lets maintenance happen before failure occurs without the waste created by ultra-conservative replacement timelines.&nbsp;</p>
       <h3>The Process</h3>
-      <p>Using NASA's engine telemetry, I built an ingestion pipeline that serializes raw multivariate sensor streams
+      <p>Using NASA's sample turbofan engine telemetry, I built an ingestion pipeline that serializes raw multivariate sensor streams
       over multithreaded TCP sockets, simulating live data. I then trained a deep bidirectional LSTM in PyTorch on the GPU
       to learn degradation patterns across many engines.</p>
       <h3>The Outcome</h3>
-      <p>The model predicts failure with an average error of under one operational cycle, validated against
-      industry-standard tests.</p>
+      <p>The model predicts failure with an average error of under one operational cycle according to NASA's industry-validated tests, well within the project constraints.</p>
     </div>
   </div>
 </section>
@@ -99,16 +95,14 @@
 <section id="fusor">
   <div class="container grid-2" style="align-items:center">
     <div>
-      <span class="eyebrow">Aug 2026 &ndash; Present</span>
+      <span class="eyebrow">Aug 2026 – Present</span>
       <h2>Plasma Jackets Fusor</h2>
       <h3>The Problem</h3>
-      <p>A Farnsworth&ndash;Hirsch fusor uses an extremely high-voltage electric field to confine plasma and drive fusion
-      reactions. Getting there safely is mostly an electronics problem: the power system has to deliver that voltage
-      reliably without putting people or equipment at risk.</p>
+      <p>A Farnsworth–Hirsch fusor uses an extremely high-voltage electric field to confine plasma and drive fusion
+      reactions. Getting there safely is mostly constrained by electrical systems. The power system has to deliver 20+ kV and 15+ mA reliably without endangering nearby individuals.&nbsp;</p>
       <h3>The Process</h3>
-      <p>With Georgia Tech's Plasma Jackets, I lead development of the fusor's electronics and power delivery
-      architecture. I designed the power delivery system around the high-voltage requirements of plasma generation,
-      with safety and stability as the primary design constraints.</p>
+      <p>With Georgia Tech's Plasma Jackets, I help lead development of the fusor's electronics and power delivery
+      architecture. I designed the power delivery system around the high-voltage requirements of plasma generation, with a MOT-based architecture using a Cockcroft-Walton Multiplier to achieve target stats.&nbsp;</p>
       <h3>The Outcome</h3>
       <p>The result is a robust power delivery system that supports stable plasma confinement and reliable fusor
       operation.</p>
@@ -121,13 +115,15 @@
 </main>
 <footer class="site-footer">
   <div class="container footer-row">
-    <span>&copy; 2026 Ishaan K. Marwaha &middot; Computer Engineering, Georgia Tech</span>
-    <span><a href="mailto:imarwaha3@gatech.edu">Email</a> &middot; <a href="https://www.linkedin.com/in/ishaanmarwaha/" target="_blank" rel="noopener">LinkedIn</a></span>
+    <span>© 2026 Ishaan K. Marwaha · Computer Engineering, Georgia Tech</span>
+    <span><a href="mailto:imarwaha3@gatech.edu">Email</a> · <a href="https://www.linkedin.com/in/ishaanmarwaha/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
 </footer>
 <script>
   const t=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links');
   t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
 </script>
+
+
 </body>
 </html>
