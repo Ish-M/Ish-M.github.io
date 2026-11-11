@@ -15,6 +15,7 @@ experience.html     One <section> per role (Medi-Loc, Bhasin Lab, ViTAL Lab, Whi
 projects.html       One <section> per project (RISC-V, TurboSentry, Fusor) + commented-out Discovery Project
 resume.html         Resume shown as an image (assets/img/resume.png) + PDF download buttons
 career-goals.html   Long-term vision + "Where I'm headed" card, 5-step roadmap, skills cards
+achievements.html   Publications, Patents (grid-2), Awards & Honors (grid-3) as cards
 contact.html        Email, LinkedIn, resume download, location
 assets/css/style.css   Single shared stylesheet (all pages)
 assets/img/            Images (jpg/png/svg)
@@ -44,10 +45,9 @@ outside images credited. Do not remove or rename these pages without being asked
    ```
 4. Add the nav link to **all** pages, in the same position in each. Mark the current page with
    `aria-current="page"` on that page only. Current nav order:
-   Home, About, Experience, Projects, Resume, Career Goals, Contact.
-   (Planned: Achievements goes between Projects and Resume.)
-5. If the nav gets crowded on desktop, raise the `@media (max-width: 820px)` breakpoint in `style.css`
-   so it collapses to the Menu button sooner. Check that nothing wraps at roughly 900–1100px wide.
+   Home, About, Experience, Projects, Achievements, Resume, Career Goals, Contact.
+5. If the nav gets crowded on desktop, raise the nav `@media (max-width: 900px)` breakpoint in `style.css`
+   so it collapses to the hamburger (☰) button sooner. Check that nothing wraps at roughly 900–1100px wide.
 
 ## Content patterns
 
